@@ -71,6 +71,7 @@ README.md
 - Baseline Ridge CV log-RMSE ≈ **0.148 ± 0.041**
 - Log-transforming the target significantly improves performance
 - Pipeline is stable and reproducible
+- Final predictions are generated locally from the trained pipeline and are not versioned, as they are fully reproducible.
 
 ---
 
