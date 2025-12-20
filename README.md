@@ -1,7 +1,13 @@
 # House Price Prediction
+![Python](https://img.shields.io/badge/Python-3.12-blue)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-1.8.0-orange)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-green)
+![NumPy](https://img.shields.io/badge/NumPy-Numerical-blueviolet)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange)
+![Git](https://img.shields.io/badge/Git-Version%20Control-red)
 
-End-to-end machine learning project using structured tabular data to predict house prices.
-The project emphasizes **clean preprocessing pipelines**, **reproducibility**, and **proper model evaluation**.
+
+House Price Prediction is an end-to-end machine learning project using the Ames Housing dataset to predict sale prices with reproducible pipelines and model comparison. The project implements robust preprocessing, cross-validation, and model selection to achieve significant performance gains.
 
 ---
 
@@ -64,6 +70,7 @@ README.md
 - Metric: **RMSE (log space)**
 - Target variable transformed using `log1p(SalePrice)` to handle skewness
 
+
 ---
 
 ## Results
@@ -73,7 +80,23 @@ README.md
 - Pipeline is stable and reproducible
 - Final predictions are generated locally from the trained pipeline and are not versioned, as they are fully reproducible.
 
+### Conclusion
+
+- HistGradientBoosting captured non-linear patterns that linear models missed.
+
+
 ---
+
+## Key Achievements
+
+- Reduced log-RMSE from 0.148 (Ridge) to 0.134 (HistGradientBoosting)
+
+- Built reproducible preprocessing pipelines with scikit-learn
+
+- Compared multiple models and documented rationale
+
+---
+
 
 ## Status
 
@@ -81,7 +104,7 @@ README.md
 - EDA ✅
 - Preprocessing pipeline ✅
 - Baseline model & CV evaluation ✅
-- Advanced models (ElasticNet, tree-based models) ⏳
+- Advanced models (ElasticNet, tree-based models) ✅
 
 ---
 
